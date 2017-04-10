@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     var produto: Produto!
     
     
-        @IBOutlet weak var tfQuantidade: UILabel!
+    @IBOutlet weak var tfQuantidade: UILabel!
     @IBOutlet weak var stQuantidade: UIStepper!
     
    //LABELS
@@ -24,10 +24,13 @@ class ViewController: UIViewController {
     
    
     @IBAction func btnAdicionar(_ sender: Any) {
-        let p = ProdutoPedido(produto: self.produto,quantidade: Int(self.stQuantidade.value))
+        let p = ProdutoPedido(produto: self.produto, quantidade: Int(self.stQuantidade.value))
         
         let appdel = UIApplication.shared.delegate as! AppDelegate
+       
         appdel.pedido?.add(produtopedido: p)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     
@@ -39,8 +42,9 @@ class ViewController: UIViewController {
         let valor = self.produto.valor
         let qtde = Int(self.stQuantidade.value)
        
-        self.tfQuantidade.text = String(self.stQuantidade.value)
+        self.tfQuantidade.text = String(Int(self.stQuantidade.value))
         self.lbTotal.text = String(Double(qtde) * valor!)
+        print(tfQuantidade)
     
     }
     override func viewDidAppear(_ animated: Bool) {

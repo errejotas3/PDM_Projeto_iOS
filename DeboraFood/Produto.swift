@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Produto:NSObject{
+class Produto:NSObject,NSCoding{
 
     var nome: String!
     var valor: Double!
@@ -24,6 +24,16 @@ class Produto:NSObject{
     self.valor = valor
     }
     
+    required init? (coder aDecoder: NSCoder){
+        self.nome = aDecoder.decodeObject(forKey: "nome") as! String
+        self.valor = aDecoder.decodeObject(forKey: "valor") as! Double
+    }
     
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.nome, forKey: "nome")
+        aCoder.encode(self.valor, forKey: "valor")
+        
+    }
+
         
 }

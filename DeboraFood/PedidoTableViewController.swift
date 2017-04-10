@@ -11,6 +11,15 @@ import UIKit
 class PedidoTableViewController: UITableViewController {
     var pedido: Pedido!
     
+    @IBAction func finalizar(_ sender: Any) {
+        let appdel = UIApplication.shared.delegate as! AppDelegate
+        appdel.addInArquivo(ped: self.pedido)
+    
+        
+        appdel.pedido = Pedido()
+        self.pedido = Pedido()
+        
+    }
    
    
     @IBOutlet weak var lbTotal: UILabel!

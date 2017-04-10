@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841420E01E9C04750004D710 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841420DF1E9C04750004D710 /* Cadastro.swift */; };
 		8468EAD91E98002200781854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468EAD81E98002200781854 /* AppDelegate.swift */; };
 		8468EADB1E98002200781854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468EADA1E98002200781854 /* ViewController.swift */; };
 		8468EADE1E98002200781854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8468EADC1E98002200781854 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841420DF1E9C04750004D710 /* Cadastro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
 		8468EAD51E98002200781854 /* DeboraFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeboraFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8468EAD81E98002200781854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8468EADA1E98002200781854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				8468EAF21E98117900781854 /* Produto.swift */,
 				84E4B6441E99456F008E251C /* ProdutoPedido.swift */,
 				8468EAF41E98159B00781854 /* Pedido.swift */,
+				841420DF1E9C04750004D710 /* Cadastro.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8468EADB1E98002200781854 /* ViewController.swift in Sources */,
 				8468EAD91E98002200781854 /* AppDelegate.swift in Sources */,
 				8468EAF31E98117900781854 /* Produto.swift in Sources */,
+				841420E01E9C04750004D710 /* Cadastro.swift in Sources */,
 				84E4B6431E9940F9008E251C /* PedidoTableViewController.swift in Sources */,
 				8468EAE11E98002200781854 /* DeboraFood.xcdatamodeld in Sources */,
 			);

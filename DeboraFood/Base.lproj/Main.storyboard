@@ -177,7 +177,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Pedidos" id="OQu-gG-gZZ"/>
+                    <navigationItem key="navigationItem" title="Pedidos" id="OQu-gG-gZZ">
+                        <barButtonItem key="rightBarButtonItem" title="Finalizar" id="DSu-jj-rQo">
+                            <connections>
+                                <action selector="finalizar:" destination="o9J-SJ-1f5" id="hQ1-vz-0O2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lbTotal" destination="CFv-vy-8AP" id="hBE-Ij-yab"/>
                     </connections>

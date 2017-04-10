@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ED1CDBD0B288A17BA8A03C70DC95DCCD57DA260E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ED1CDBD0B288A17BA8A03C70DC95DCCD57DA260E" : 9223372036854775807,
+    "FC5D981805BF3DAF32CC083B9B9712E4C4F88327" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "069521C0-767B-456E-847F-5C3871E2A17F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ED1CDBD0B288A17BA8A03C70DC95DCCD57DA260E" : "DeboraFood\/",
+    "FC5D981805BF3DAF32CC083B9B9712E4C4F88327" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DeboraFood",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DeboraFood.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/errejotas3\/PDM_Projeto_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED1CDBD0B288A17BA8A03C70DC95DCCD57DA260E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rafaelcruzpb\/PDM.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC5D981805BF3DAF32CC083B9B9712E4C4F88327"
+    }
+  ]
+}

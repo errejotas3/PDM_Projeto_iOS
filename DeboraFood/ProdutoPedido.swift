@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ProdutoPedido: NSObject{
+class ProdutoPedido: NSObject,NSCoding{
     
     var produto: Produto
     var quantidade: Int
@@ -20,6 +20,17 @@ class ProdutoPedido: NSObject{
     override var description: String{
         return self.produto.nome + " - QNT:" + String(self.quantidade) + " - Total:" + String(Double(self.quantidade)*Double(self.produto.valor))
     }
+    required init? (coder aDecoder: NSCoder){
+        self.produto = aDecoder.decodeObject(forKey: "produto") as! Produto
+        self.quantidade = aDecoder.decodeObject(forKey: "quantidade") as! Int
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.produto, forKey: "produto")
+        aCoder.encode(self.quantidade, forKey: "quantidade")
+        
+    }
+
     
     func getTotal() -> Double{
         

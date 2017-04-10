@@ -14,21 +14,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var pedido: Pedido?
+    var cadastro: Cadastro!
 
     
     
     func arquivo() -> String {
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
+       
         return "\(path)/total"
+    
     }
+    func addInArquivo(ped: Pedido){
+        self.cadastro.pedidos.append(ped)
+     
+        
+        NSKeyedArchiver.archiveRootObject(self.cadastro, toFile: self.arquivo())
+    }
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let obj = NSKeyedUnarchiver.unarchiveObject(withFile: self.arquivo())
         
         if (obj == nil){
-            self.pedido = Pedido()
+            self.cadastro = Cadastro()
         }else{
-            self.pedido = obj as! Pedido
+            self.cadastro = obj as! Cadastro
         }
         
         self.pedido = Pedido()
@@ -42,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        NSKeyedArchiver.archiveRootObject(self.pedido, toFile: self.arquivo())
+        NSKeyedArchiver.archiveRootObject(self.cadastro, toFile: self.arquivo())
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
